@@ -19,6 +19,7 @@
 		A3AD4713227D5EE8005F7600 /* IntermediaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AD4712227D5EE8005F7600 /* IntermediaryModels.swift */; };
 		A3AD4716227D5F9F005F7600 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AD4715227D5F9F005F7600 /* Order.swift */; };
 		A3AD4718227D601E005F7600 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AD4717227D601E005F7600 /* MenuController.swift */; };
+		A3AD471C227FD58B005F7600 /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AD471B227FD58B005F7600 /* OrderConfirmationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		A3AD4712227D5EE8005F7600 /* IntermediaryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediaryModels.swift; sourceTree = "<group>"; };
 		A3AD4715227D5F9F005F7600 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		A3AD4717227D601E005F7600 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		A3AD471B227FD58B005F7600 /* OrderConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				A3AD4708227D59B3005F7600 /* MenuTableViewController.swift */,
 				A3AD470A227D59C8005F7600 /* OrderTableViewController.swift */,
 				A3AD470C227D5B1A005F7600 /* MenuItemDetailViewController.swift */,
+				A3AD471B227FD58B005F7600 /* OrderConfirmationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3AD471C227FD58B005F7600 /* OrderConfirmationViewController.swift in Sources */,
 				A3AD470D227D5B1A005F7600 /* MenuItemDetailViewController.swift in Sources */,
 				A3AD4718227D601E005F7600 /* MenuController.swift in Sources */,
 				A3AD470B227D59C8005F7600 /* OrderTableViewController.swift in Sources */,

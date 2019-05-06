@@ -212,11 +212,60 @@
                             <outlet property="delegate" destination="MHj-e5-Azn" id="fgl-dV-IPg"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Wzx-4E-Qk9"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="Wzx-4E-Qk9">
+                        <barButtonItem key="rightBarButtonItem" title="Submit" id="c3p-FN-w7t">
+                            <connections>
+                                <action selector="submitTapped:" destination="MHj-e5-Azn" id="3Rp-ke-cCY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="0xc-0C-Iz9" kind="presentation" identifier="ConfirmationSegue" id="4aW-Ke-GuN"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="42I-gO-0xJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1585.5072463768117" y="1482.5892857142856"/>
+        </scene>
+        <!--Order Confirmation View Controller-->
+        <scene sceneID="UXo-3Y-tHz">
+            <objects>
+                <viewController id="0xc-0C-Iz9" customClass="OrderConfirmationViewController" customModule="Restaurant" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QYu-pz-Lxe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35H-rr-CPa">
+                                <rect key="frame" x="0.0" y="438" width="414" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83y-TE-IRK">
+                                <rect key="frame" x="180" y="479" width="54" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <segue destination="tbH-tb-Baf" kind="unwind" identifier="DismissConfirmation" unwindAction="unwindToOrderListWithSegue:" id="2QL-VF-oxd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="v1r-iG-g2W" firstAttribute="trailing" secondItem="35H-rr-CPa" secondAttribute="trailing" id="2DQ-uX-g1g"/>
+                            <constraint firstItem="35H-rr-CPa" firstAttribute="centerY" secondItem="QYu-pz-Lxe" secondAttribute="centerY" id="ZQh-dh-afU"/>
+                            <constraint firstItem="35H-rr-CPa" firstAttribute="leading" secondItem="v1r-iG-g2W" secondAttribute="leading" id="idu-SF-3yl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v1r-iG-g2W"/>
+                    </view>
+                    <connections>
+                        <outlet property="timeRemainingLabel" destination="35H-rr-CPa" id="Eig-gF-feV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wH2-W6-gdo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="tbH-tb-Baf" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2387" y="1483"/>
         </scene>
         <!--Your Order-->
         <scene sceneID="YTU-DB-Yx5">
